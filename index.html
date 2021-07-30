@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid" style="max-width: 1600px;">
+    <!-- Sidebar/menu -->
+    <nav class="navbar navbar-light" style=" width: 250px; z-index: 3; display: none;" id="mySidebar">
+        <div class="navbar-nav">
+            <a href="#" onclick="navclose()" class="d-lx-none px-3 py-2 text-dark icon-position d-lg-none"> <i class="fa fa-remove"></i></a>
+            <img class="pt-3" src="img/avatar_g.jpg" alt="" style="width: 45%;">
+            <br>
+            <h4><b>PORTFOLIO</b></h4>
+            <P class="text-secondary">Powered by @ me</P>
+        </div>
+        <div class="navbar-nav">
+            <a href="" class="nav-link px-3 py-2 text-dark" onclick="navclose()">
+                <i class="fa fa-th-large fa-fw mr-3"></i>
+                PORTFOLIO
+            </a>
+            <a href="" class="nav-link px-3 py-2 text-dark" onclick="navclose()">
+                <i class="fa fa-user fa-fw mr-3"></i>
+                ABOUT
+            </a>
+            <a href="" class="nav-link px-3 py-2 text-dark" onclick="navclose()">
+                <i class="fa fa-envelope fa-fw mr-3"></i>
+                CONTACT
+            </a>
+        </div>
+        <div class="navbar-nav my-3 " style="font-size: 18px;">
+            <p>
+                <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest-p"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            </p>
+        </div>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="container-fluid overlay d-lg-none" onclick="navclose()" style="cursor: pointer; display: none;" title="Close Side menu" id="myOverlay"></div>
+    <!-- !PAGE CONTENT! -->
+    <div class="row page-content" style="margin-left:300px">
+        <!-- Header -->
+        <header class="col-12 d-lg-none small-screen">
+            <samp class="btn  text-dark float-left" onclick="navopen()" style="font-size: 30px;">
+                <i class="fa fa-bars"></i>
+            </samp>
+            <a href="#" class="float-right">
+                <img src="img/avatar_g.jpg" alt="" class="rounded-circle m-3" style="width: 65px;">
+            </a>
+        </header>
+        <div class="col-12 mt-5">
+            <h1><b>My Portfolio</b></h1>
+            <div class="my-3 py-3 d-flex" style="border-bottom: 6px solid #ccc;">
+                <span class="mr-3">Filter</span>
+                <button class="btn btn-dark">ALL</button>
+                <button class="btn btn-light">
+                    <i class="fa fa-diamond mr-3"></i>
+                    Design
+                </button>
+                <button class="btn btn-light d-none d-sm-block">
+                    <i class="fa fa-photo mr-3 "></i>
+                    Photos
+                </button>
+                <button class="btn btn-light d-none d-sm-block">
+                    <i class="fa fa-map-pin mr-3"></i>
+                    Art
+                </button>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/mountains.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                       <p><b>Lorem Ipsum</b></p>
+                       <p>
+                            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                       </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/lights.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>
+                             Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                             condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/nature.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>
+                             Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                             condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/p1.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>
+                             Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                             condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/p2.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>
+                             Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                             condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="img/p3.jpg" alt="" style="width: 100%;">
+                    <div class="container-fluid mt-3" style="padding: 0.01em 16px;">
+                        <p><b>Lorem Ipsum</b></p>
+                        <p>
+                             Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+                             condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="col-12">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a href="" class="page-link ">«</a>
+                </li>
+                <li class="page-item active-e">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">4</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">»</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12">
+           <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="img/avatar_g.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="img/me2.jpg" alt="" style="width: 100%;">
+                </div>
+           </div>
+        </div>
+        <!-- About Me -->
+        <div class="col-12">
+            <h4>About Me</h4>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <!-- Progress bar -->
+        <div class="col-12" style="margin-bottom:32px; padding: 12px 24px;">
+            <h4>Technical Skills</h4>
+            <h6>Photography</h6>
+            <div class="prgress bg-secondary" style="height: 30px;">
+                <div class="progress-bar bg-dark" style="width: 95%; height: 30px;">95%</div>
+            </div>
+            <h6>Web Design</h6>
+            <div class="prgress bg-secondary" style="height: 30px;">
+                <div class="progress-bar bg-dark" style="width: 85%; height: 30px;">85%</div>
+            </div>
+            <h6>Photoshop</h6>
+            <div class="prgress bg-secondary" style="height: 30px;">
+                <div class="progress-bar bg-dark" style="width: 80%; height: 30px;">80%</div>
+            </div>
+            <br>
+            <button class="btn btn-dark rounded-0">
+                <i class="fa fa-download mr-3"></i>
+                Download Resume
+            </button>
+            <h4>How much I charge</h4>
+        </div>
+        <!-- list group -->
+        <div class="col-12" >
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group text-center">
+                        <li class="li list-group-item list-group-action bg-dark text-white py-5" style="font-size: 24px;">Basic</li>
+                        <li class="li list-group-item list-group-action py-3">Web Design</li>
+                        <li class="li list-group-item list-group-action py-3">Photography</li>
+                        <li class="li list-group-item list-group-action py-3">1GB Storage</li>
+                        <li class="li list-group-item list-group-action py-3">Mail Support</li>
+                        <li class="li list-group-item list-group-action py-5"><strong>$ 10</strong> <br> per month</li>
+                        <li class="li list-group-item list-group-action py-3">
+                            <button class="btn btn-info rounded-0">Sigb Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group text-center">
+                        <li class="li list-group-item list-group-action bg-info text-white py-5" style="font-size: 24px;">Basic</li>
+                        <li class="li list-group-item list-group-action py-3">Web Design</li>
+                        <li class="li list-group-item list-group-action py-3">Photography</li>
+                        <li class="li list-group-item list-group-action py-3">50GB Storage</li>
+                        <li class="li list-group-item list-group-action py-3">Endless Support</li>
+                        <li class="li list-group-item list-group-action py-5"><strong>$ 25</strong> <br> per month</li>
+                        <li class="li list-group-item list-group-action py-3">
+                            <button class="btn btn-info rounded-0">Sigb Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul class="list-group text-center">
+                        <li class="li list-group-item list-group-action bg-dark text-white py-5" style="font-size: 24px;">Basic</li>
+                        <li class="li list-group-item list-group-action py-3">Web Design</li>
+                        <li class="li list-group-item list-group-action py-3">Photography</li>
+                        <li class="li list-group-item list-group-action py-3">Unlimited Storage</li>
+                        <li class="li list-group-item list-group-action py-3">Endless Support</li>
+                        <li class="li list-group-item list-group-action py-5"><strong>$ 25</strong> <br> per month</li>
+                        <li class="li list-group-item list-group-action py-3">
+                            <button class="btn btn-info rounded-0">Sigb Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="col-12 px-2 py-4" style="background-color: rgba(128, 128, 128, 0.61);">
+            <div class="container-fluid px-4">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-4 col-sm-12 bg-secondary py-4">
+                        <p class="text-light"><i class="fa fa-envelope" style="font-size: 32px;"></i></p>
+                        <p class="text-light">email@email.com</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 bg-info py-4">
+                        <p class="text-light"><i class="fa fa-envelope" style="font-size: 32px;"></i></p>
+                        <p class="text-light">Chicago, US</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 bg-secondary py-4">
+                        <p class="text-light"><i class="fa fa-phone" style="font-size: 32px;"></i></p>
+                        <p class="text-light">512312311</p>
+                    </div>
+                </div>
+                <hr class="bg-white">
+                <div class="row">
+                    <div class="col">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Message</label>
+                                <input type="text" class="form-control rounded-0">
+                            </div>
+                            <button type="submit" class="btn btn-dark text-white mb-3">
+                                <i class="fa fa-paper-plane mr-3"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="col text-white py-5 bg-secondary">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h4>FOOTER</h4>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p>Powered by @ <a href="#">me</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h4>BLOG POSTS</h4>
+                    <ul class="list-group">
+                        <li class="li-page-group-item list-group-item-action px-3 d-flex">
+                            <img class="mr-3" src="img/workshop.jpg" alt="" style="width: 50px;">
+                            <span class="text-white">
+                                Lorem
+                                <br>
+                                Sed mattis nunc
+                            </span>
+                        </li>
+                        <hr class="bg-white">
+                        <li class="li-page-group-item list-group-item-action px-3 d-flex">
+                            <img class="mr-3" src="img/gondol.jpg" alt="" style="width: 50px;">
+                            <span class="text-white">Ipsum
+                                <br>
+                                Praes tinci sed
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="px-2 text-light bg-dark mb-3">Travel</span> 
+                        <span class="px-2 text-dark bg-color mb-3">New York</span> 
+                        <span class="px-2 text-dark bg-color mb-3">London</span>
+                        <span class="px-2 text-dark bg-color mb-3">IKEA</span> 
+                        <span class="px-2 text-dark bg-color mb-3">NORWAY</span> 
+                        <span class="px-2 text-dark bg-color mb-3">DIY</span>
+                        <span class="px-2 text-dark bg-color mb-3">Ideas</span> 
+                        <span class="px-2 text-dark bg-color mb-3">Baby</span> 
+                        <span class="px-2 text-dark bg-color mb-3">Family</span>
+                        <span class="px-2 text-dark bg-color mb-3">News</span> 
+                        <span class="px-2 text-dark bg-color mb-3">Clothing</span> 
+                        <span class="px-2 text-dark bg-color mb-3">Shopping</span>
+                        <span class="px-2 text-dark bg-color mb-3">Sports</span> 
+                        <span class="px-2 text-dark bg-color mb-3">Games</span>
+                      </p>
+                </div>
+            </div>
+        </footer>
+        <div class="col-12 bg-position" style="height: 50px; background-color: #000; color: white;">
+            <p>Powered by @ <a href="#" class="text-white">me</a></p>
+        </div>
+    </div>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <!-- js -->
+        <script src="main.js"></script>
+    </body>
+    </html>

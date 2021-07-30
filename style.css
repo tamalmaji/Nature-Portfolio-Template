@@ -1,0 +1,88 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+/* navbar icon */
+.icon-position{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* navbar */
+.navbar{
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    overflow: auto;
+}
+@media(min-width: 993px){
+    .navbar{
+        display: block!important;
+    }
+}
+.nav-link:hover{
+    background-color: gray;
+}
+/* Top menu on small screens */
+.small-screen{
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+}
+/*  Overlay effect when opening sidebar on small screens */
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+/* !PAGE CONTENT! */
+.page-content{
+    transition-property: margin-left;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+@media screen and (max-width: 993px){
+    .page-content{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+}
+/* pagination */
+
+.page-item a{
+    color: black;
+}
+.page-item a:hover{
+    background: #000;
+    color: white;
+}
+.active-e a{
+    background: #000;
+    color: white;
+}
+.active-e a:hover{
+    background-color: gray;
+    color: #000;
+}
+/* list group */
+.list-group{
+    opacity: 1.0;
+}
+.list-group:hover{
+    opacity:  0.5;
+}
+.bg-color{
+    background-color: rgba(189, 184, 184, 0.849);
+}
+.bg-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
